@@ -1,0 +1,270 @@
+:root{
+  --color1: #A89689;
+  --color2: #927259;
+  --color3: #B06735;
+  --color4: #902E1C;
+  --color5: #411316;
+}
+
+
+.main{
+  transition: .1s ease-in;
+}
+
+.logo{
+    width: 75px;
+    height: auto;
+}
+
+.navbar-toggler {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+  
+.fa-bars-staggered{
+  transform: scale(1.5);
+}
+
+  .navbar-toggler:hover,
+  .navbar-toggler:focus,
+  .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+    border: none; /* Asegura que no reaparezca el borde */
+    background-color: transparent; /* Sin fondo en hover */
+  }
+  
+/* .navbar{
+  height: 75px;
+} */
+
+  .cont-banner{
+    width: 100%;
+    height: 250px;
+    margin-top: 79px;
+  }
+.banner{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+  .banner1{
+    background-image: url("./assets/banners/BANNER_SERVICIOS.png");
+  }
+
+  .banner2{
+    background-image: url("./assets/banners/BANNER_ABERTURAS.png");
+  }
+
+  .banner3{
+    background-image: url("./assets/banners/BANNER_COTIZAR.png");
+  }
+
+.carrousel-inner
+
+
+  /* ---------------------------seccion cards ------------------  */
+
+  .card{
+    transition: .2s ease-in;
+  }
+.title-card{
+  color: #5d5d5d;
+  transition: .2s ease-in;
+}
+
+  .info-card{
+    color: #797979;
+    transition: .2s ease-in;
+  }
+  .card:hover{
+    background-color: var(--color3);
+    color: white !important;
+  }
+  .card:hover .info-card,
+  .card:hover .title-card{
+    color: white !important;
+  }
+
+  .icon-card{
+    transition: .2s ease-in;
+
+  }
+.card:hover .icon-card{
+  fill: #fff;
+  
+}
+
+/* service */
+
+.cont-service{
+  position: relative;
+  height: 200px;
+}
+
+
+.cont-service::before{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 22%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  opacity: 50%;
+}
+
+.cont-service:nth-child(4n+1)::before { background-color: var(--color1); }
+.cont-service:nth-child(4n+2)::before { background-color: var(--color2); }
+.cont-service:nth-child(4n+3)::before { background-color: var(--color3); }
+.cont-service:nth-child(4n)::before { background-color: var(--color4); }
+
+
+
+.cont-img-service{
+  height: 50%;
+}
+
+.img-service{
+  height: 90%;
+}
+
+.opacidad{
+  filter: blur(3px);
+}
+
+@media (min-width: 991px){
+  .opacidad{
+    filter: blur(0);
+  }
+}
+
+.services-carrousel{
+border: solid 1px blue;
+}
+
+.cont-img-carrousel-service{
+  height: 350px;
+  border-radius: 50px;
+  background-color: red;
+  transform: scale(90%);
+}
+
+.slick-center {
+  background-color: black;
+  transform: scale(100%);
+  z-index: 1000;
+  transition: .5s ease-in-out;
+} 
+
+.slick-arrow{
+  background-color: #000;
+}
+
+.slick-prev, .slick-next {
+  position: absolute;
+  top: 50%;
+  height: 40px;
+  transform: translateY(-50%);
+  z-index: 10;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.slick-prev img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+}
+
+.slick-next img{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--color3) ;
+}
+
+/*---------------- contacto -------------------------*/
+
+.contacto{
+  background-color: var(--color1);
+  color: #fff;
+
+}
+
+.inf-contacto{
+  width: 100%;
+}
+.cont-form{
+  width: 100%;
+}
+
+.form-oscuro .form-control::placeholder {
+  color: white !important;
+  opacity: 1; 
+}
+
+/* ---------------------------quienes somos------------------- */
+
+.img-quienes-somos{
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  float: left;
+  
+}
+
+/* -------------------trabaja con nosotros----------------- */
+
+.trabaja-con-nosotros{
+  background-color: #F5F5F0;
+}
+
+  /* -------------------------media querys------------------------*/
+  
+  @media (min-width:450px){
+    .banner{
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .img-quienes-somos{
+      width: 300px;
+      max-height: 500px;
+    }
+  }
+
+  @media (min-width: 768px){
+
+    .cont-banner{
+      margin-top: 80px;
+      height: 500px;
+    }
+
+    .card{
+      min-height: 250px;
+    }
+
+
+
+
+ 
+  }
+
+  @media (min-width:1200px){
+    .cont-banner{
+      margin-top: 80px;
+      height: calc(100vh - 80px);
+    }
+  }

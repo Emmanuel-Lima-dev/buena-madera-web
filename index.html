@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!------------------------ header --------------------->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-white bg-white text-center px-4 fixed-top"
+      >
+        <div class="container bg-white">
+          <a class="navbar-brand" href="#"
+            ><img class="logo" src="./assets/icons/LOGO-PPAL-COLOR.png" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul
+              class="navbar-nav ms-auto text-start pt-5 pb-5 pt-lg-0 pb-lg-0 gap-4 fs-md-5"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Contacto</a></li>
+                  <li><a class="dropdown-item" href="#">Quienes Somos</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Trabaja con Nosotros</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Preguntas Frecuentes</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Nuestras Redes</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link" href="#">Contacto</a></li>
+              <li><a class="nav-link" href="#">Quienes Somos</a></li>
+              <li><a class="nav-link" href="#">Trasbaja con Nosotros</a></li>
+              <li><a class="nav-link" href="#">Preguntas Frecuentes</a></li>
+              <li><a class="nav-link" href="#">Nuestras Redes</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active cont-banner" data-bs-interval="3000">
+            <div class="banner banner1"></div>
+          </div>
+          <div class="carousel-item cont-banner" data-bs-interval="3000">
+            <div class="banner banner2"></div>
+          </div>
+          <div class="carousel-item cont-banner" data-bs-interval="3000">
+            <div class="banner banner3"></div>
+          </div>
+        </div>
+      </div>
+
+      <!---------------------- cards ------------------------------>
+      <div class="container-lg cont-cards py-5 my-lg-5 px-4">
+        <div
+          class="row justify-content-center gap-2 gap-lg-5 align-items-center"
+        >
+          <div class="card col-sm-4 rounded-4 py-4 border-0">
+            <div class="mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                fill="#B06735"
+                class="bi bi-credit-card icon-card"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"
+                />
+                <path
+                  d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"
+                />
+              </svg>
+            </div>
+
+            <h4 class="title-card">Facilidad de pago</h4>
+
+            <p class="info-card card-body px-0">
+              Ofrecemos facilidad de pago en efectivo o transferencia bancaria.
+              Contáctanos para más detalles y coordina la forma de pago que
+              mejor te convenga.
+            </p>
+          </div>
+          <div class="card col-sm-4 rounded-4 py-4 border-0">
+            <div class="mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                fill="#B06735"
+                class="bi bi-house-check icon-card"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M7.293 1.5a1 1 0 0 1 1.414 0L11 3.793V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v3.293l2.354 2.353a.5.5 0 0 1-.708.708L8 2.207l-5 5V13.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 2 13.5V8.207l-.646.647a.5.5 0 1 1-.708-.708z"
+                />
+                <path
+                  d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.707l.547.547 1.17-1.951a.5.5 0 1 1 .858.514"
+                />
+              </svg>
+            </div>
+
+            <h4>Asesoramiento personalizado</h4>
+            <p class="info-card card-body px-0">
+              Contamos con asesoramiento personalizado para ayudarle a elegir
+              las mejores opciones de pulido, plastificado o colocación de pisos
+              según sus necesidades.
+            </p>
+          </div>
+          <div class="card col-sm-4 rounded-4 py-4 border-0">
+            <div class="mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                fill="#B06735"
+                class="bi bi-hourglass icon-card"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5m2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702c0 .7-.478 1.235-1.011 1.491A3.5 3.5 0 0 0 4.5 13v1h7v-1a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351v-.702c0-.7.478-1.235 1.011-1.491A3.5 3.5 0 0 0 11.5 3V2z"
+                />
+              </svg>
+            </div>
+            <h4>Plazos y coordinación</h4>
+            <p class="info-card">
+              Te proporcionamos plazos claros y transparentes para garantizar un
+              trabajo eficiente y sin contratiempos.
+            </p>
+          </div>
+          <div class="card col-sm-4 rounded-4 py-4 border-0">
+            <div class="mb-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="36"
+                height="36"
+                fill="#B06735"
+                class="bi bi-arrow-clockwise icon-card"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2z"
+                />
+                <path
+                  d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466"
+                />
+              </svg>
+            </div>
+            <h4>Atención y soporte continuo</h4>
+            <p class="info-card">
+              Nuestro equipo está siempre disponible para resolver tus dudas y
+              recomendarte el soporte necesario en cada etapa del proceso.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!------------------------ servicios ------------------------>
+      <div class="services container-lg py-5">
+        <h2 class="text-center mb-5">servicios</h2>
+        <div class="row justify-content-center">
+          <div class="col-6 col-lg-2 cont-service text-center">
+            <div class="cont-img-service">
+              <img
+                class="img-service"
+                src="./assets/icons-services/COLOCACIONES.png"
+                alt=""
+              />
+            </div>
+            <h5>Colocaciones</h5>
+          </div>
+          <div class="col-6 col-lg-2 cont-service text-center">
+            <div class="cont-img-service">
+              <img
+                class="img-service"
+                src="./assets/icons-services/TEÑIDO.png"
+                alt=""
+              />
+            </div>
+            <h5>Teñido</h5>
+          </div>
+          <div class="col-6 col-lg-2 cont-service text-center">
+            <div class="cont-img-service">
+              <img
+                class="img-service"
+                src="./assets/icons-services/REPARACIONES.png"
+                alt=""
+              />
+            </div>
+            <h5>Reparaciones</h5>
+          </div>
+          <div class="col-6 col-lg-2 cont-service text-center">
+            <div class="cont-img-service">
+              <img
+                class="img-service"
+                src="./assets/icons-services/HIDRO.png"
+                alt=""
+              />
+            </div>
+            <h5>Hidro</h5>
+          </div>
+          <div class="col-6 col-lg-2 cont-service text-center">
+            <div class="cont-img-service">
+              <img
+                class="img-service"
+                src="./assets/icons-services/PLASTIFICADO.png"
+                alt="icono-plastificado"
+              />
+            </div>
+            <h5>Plastificado</h5>
+          </div>
+          <div class="col-6 col-lg-2 cont-service text-center">
+            <div class="cont-img-service">
+              <img
+                class="img-service"
+                src="./assets/icons-services/ABERTURAS.png"
+                alt=""
+              />
+            </div>
+            <h5>Aberturas</h5>
+          </div>
+          <div class="col-6 col-lg-2 cont-service text-center">
+            <div class="cont-img-service">
+              <img
+                class="img-service"
+                src="./assets/icons-services/PULIDO.png"
+                alt=""
+              />
+            </div>
+            <h5>Pulido</h5>
+          </div>
+        </div>
+        <p class="mx-5 text-center fs-4">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum
+          dignissimos itaque culpa nemo dolores tempora omnis eveniet.
+        </p>
+        <div class="services-carrousel my-5">
+          <div class="cont-img-carrousel-service hidrolaqueado">ghj</div>
+          <div class="cont-img-carrousel-service service1">chau</div>
+          <div class="cont-img-carrousel-service service2">fgfg</div>
+          <div class="cont-img-carrousel-service">fghfgh</div>
+          <div class="cont-img-carrousel-service">fghfg</div>
+          <div class="cont-img-carrousel-service">fghfgh</div>
+        </div>
+      </div>
+      <!------------------- contacto ----------------------->
+      <div class="contacto py-4">
+        <div class="container-lg">
+          <h2 class="text-center py-5">Contacto</h2>
+          <form
+            action="https://formspree.io/f/TU_ID_DE_FORMULARIO"
+            method="POST"
+            class="d-flex flex-column flex-lg-row-reverse gap-5 cont-contacto px-3"
+            id="contact-form"
+          >
+            <div class="inf-contacto d-flex align-items-center fs-4 text-light">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloremque modi eum molestiae possimus itaque nisi officiis
+              reprehenderit deleniti dicta tempora necessitatibus officia
+              cumque, quisquam nam adipisci error architecto exercitationem
+              tempore? Autem dignissimos.
+            </div>
+            <div class="cont-form d-flex flex-column justify-content-center">
+              <div class="mb-3 form-oscuro">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input
+                  type="text"
+                  class="form-control bg-transparent text-white rounded-4"
+                  id="nombre"
+                  placeholder="Escribe aquí tu nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3 form-oscuro">
+                <label for="e-mail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control bg-transparent text-white rounded-4"
+                  id="e-mail"
+                  placeholder="Escribe aquí tu nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3 form-oscuro">
+                <label for="detalles" class="form-label">Detalles</label>
+                <textarea
+                  class="form-control bg-transparent text-white rounded-4"
+                  id="detalles"
+                  rows="3"
+                  placeholder="Escribe aquí los detalles de tu consulta"
+                  required
+                ></textarea>
+              </div>
+            </div>
+          </form>
+          <button
+            type="submit"
+            form="contact-form"
+            class="ms-auto me-auto d-block my-5"
+          >
+            enviar
+          </button>
+        </div>
+      </div>
+      <!------------- quienes somos ---------------------->
+      <div class="container-lg px-4 mb-4 px-md-5">
+        <h2 class="text-center py-5">Quienes somos</h2>
+        <div class="mx-md-5 px-md-5 fs-4 text-secondary">
+          <img
+            src="./assets/images/quienes-somos.webp"
+            alt=""
+            class="img-quienes-somos rounded-5 my-5 my-md-0 me-md-5"
+          />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            dolor mollitia ad voluptatibus totam vitae laboriosam impedit error
+            magnam architecto! Quidem enim debitis reiciendis, corrupti nulla
+            iure necessitatibus laborum natus.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            dolor mollitia ad voluptatibus totam vitae laboriosam impedit error
+            magnam architecto! Quidem enim debitis reiciendis, corrupti nulla
+            iure necessitatibus laborum natus.
+          </p>
+          <h5 class="fw-bolder fs-3 text-light-emphasis">Nuestra misión</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            dolor mollitia ad voluptatibus totam vitae laboriosam impedit error
+            magnam architecto! Quidem enim debitis reiciendis, corrupti nulla
+            iure necessitatibus laborum natus.
+          </p>
+        </div>
+      </div>
+      <!-- ------------trabaja con nosotros ----------------->
+      <div class="trabaja-con-nosotros py-4">
+        <div class="container-lg">
+          <h2 class="text-center py-5">Trabajá con nosotros</h2>
+          <form
+            action="https://formspree.io/f/TU_ID_DE_FORMULARIO"
+            method="POST"
+            class="d-flex flex-column flex-lg-row-reverse gap-5 cont-contacto px-3"
+            id="hiring-form"
+          >
+            <div
+              class="inf-contacto d-flex align-items-center fs-4 text-secondary"
+            >
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Doloremque modi eum molestiae possimus itaque nisi officiis
+              reprehenderit deleniti dicta tempora necessitatibus officia
+              cumque, quisquam nam adipisci error architecto exercitationem
+              tempore? Autem dignissimos.
+            </div>
+            <div class="cont-form d-flex flex-column justify-content-center">
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre y Apellido</label>
+                <input
+                  type="text"
+                  class="form-control bg-transparent rounded-4"
+                  id="nombre"
+                  placeholder="Escribe aquí tu nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="e-mail" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control bg-transparent rounded-4"
+                  id="e-mail"
+                  placeholder="Escribe aquí tu nombre"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="localidad" class="form-label">Localidad</label>
+                <input
+                  type="text"
+                  class="form-control bg-transparent rounded-4"
+                  id="localidad"
+                  placeholder="Escribe aquí tu localidad"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input
+                  type="number"
+                  class="form-control bg-transparent rounded-4"
+                  id="telefono"
+                  placeholder="Escribe aquí tu localidad"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="form-file" class="form-label">Teléfono</label>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-cloud-upload pe-2 fs-3 text-secondary"></i>
+                  <input
+                    type="file"
+                    class="form-control bg-transparent rounded-4"
+                    id="form-file"
+                    placeholder="Escribe aquí tu localidad"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+          <button
+            type="submit"
+            form="hiring-form"
+            class="ms-auto me-auto d-block my-5"
+          >
+            enviar
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".services-carrousel").slick({
+          infinite: false,
+          dots: true,
+          prevArrow:
+            '<button type="button" class="slick-prev"><img src="./assets/icons/arrow_back.svg"></button>',
+          nextArrow:
+            '<button type="button" class="slick-next"><img src="./assets/icons/arrow_next.svg"></button>',
+          centerMode: true,
+          centerPadding: "30px",
+          slidesToShow: 3,
+          responsive: [
+            {
+              breakpoint: 991,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 768,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "40px",
+                slidesToShow: 1,
+              },
+            },
+          ],
+        });
+      });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

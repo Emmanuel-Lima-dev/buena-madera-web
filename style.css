@@ -6,8 +6,21 @@
   --color5: #411316;
 }
 
+label{
+  font-size: 1.2rem;
+  opacity: 75%;
+}
 .main{
   transition: .1s ease-in;
+}
+
+.buttons{
+  padding: 10px 0;
+  width: 300px;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  background-color: var(--color4);
 }
 
 .logo{
@@ -61,14 +74,12 @@
     background-image: url("./assets/banners/BANNER_COTIZAR.png");
   }
 
-.carrousel-inner
-
-
   /* ---------------------------seccion cards ------------------  */
 
-  .card{
-    transition: .2s ease-in;
-  }
+.card{
+  transition: .2s ease-in;
+}
+
 .title-card{
   color: #5d5d5d;
   transition: .2s ease-in;
@@ -211,6 +222,16 @@ border: solid 1px blue;
 .form-oscuro .form-control::placeholder {
   color: white !important;
   opacity: 1; 
+  opacity: 60%;
+}
+
+.form-control::placeholder {
+  opacity: 60%;
+}
+
+.form-control:focus{
+  border-color: var(--color5);
+  box-shadow: none;
 }
 
 /* ---------------------------quienes somos------------------- */
@@ -254,11 +275,6 @@ border: solid 1px blue;
     .card{
       min-height: 250px;
     }
-
-
-
-
- 
   }
 
   @media (min-width:1200px){
@@ -276,9 +292,25 @@ border: solid 1px blue;
 
   .accordion-button:focus {
     box-shadow: none;  /* Elimina el resplandor azul */
-    
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #fff;
+    background-color: #F5F5F0; 
+}
+
+/* ----------------imagen piso madera --------------------*/
+.cont-img-piso{
+  background-image: url("./assets/images/piso-laqueado\ 2.jpg");
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  /* background-position: 0% 50%; */
+  background-size: cover;
+  background-attachment: fixed;
+  filter: brightness(50%);
+}
+
+/*----------------------- footer ---------------------*/
+.footer{
+  background-color: #000;
 }

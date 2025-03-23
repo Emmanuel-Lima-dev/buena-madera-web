@@ -6,7 +6,6 @@
   --color5: #411316;
 }
 
-
 .main{
   transition: .1s ease-in;
 }
@@ -268,3 +267,18 @@ border: solid 1px blue;
       height: calc(100vh - 80px);
     }
   }
+
+  .cont-pregunta{
+    background-color: var(--color3);
+    border-radius: 50px;
+    margin: 15px 0;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none;  /* Elimina el resplandor azul */
+    
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #fff;
+}

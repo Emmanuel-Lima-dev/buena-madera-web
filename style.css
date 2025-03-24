@@ -6,10 +6,64 @@
   --color5: #411316;
 }
 
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+.goudy-regular {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.whisper-regular {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 label{
   font-size: 1.2rem;
   opacity: 75%;
 }
+
+.titulo{
+  color: var(--color5);
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2.2rem;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%);
+  text-transform: uppercase;
+  max-width:290px;
+}
+
+.titulo::before{
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: var(--color3);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.titulo::after{
+  content: url("./assets/icons/ASSET1.png");
+  left: -50px;
+  bottom: -10px;
+  position: absolute;
+}
+
 .main{
   transition: .1s ease-in;
 }
@@ -20,8 +74,11 @@ label{
   border: none;
   border-radius: 50px;
   color: #fff;
+  font-size: 1.2rem;
   background-color: var(--color4);
+  font-weight: bolder;
 }
+
 
 .logo{
     width: 75px;

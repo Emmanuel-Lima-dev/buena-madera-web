@@ -140,14 +140,32 @@ label{
 
   .cont-banner_movil{
     width: 100%;
-    height: 750px;
+    height: 550px;
     margin-top: 79px;
+
   }
+
+  .cont-inf-banner-movil{
+    background-color: rgba(168, 150, 137, 0.479);
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+    backdrop-filter: blur(3px);
+  }
+
 .banner_movil{
   width: 100%;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  filter: brightness(65%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
   .banner1_movil{
@@ -411,7 +429,7 @@ border: solid 1px blue;
   /* background-position: 0% 50%; */
   background-size: cover;
   background-attachment: fixed;
-  filter: brightness(50%);
+  filter: brightness(65%);
 }
 
 /*----------------------- footer ---------------------*/

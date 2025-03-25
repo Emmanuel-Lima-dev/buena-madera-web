@@ -26,6 +26,10 @@
   font-style: normal;
 }
 
+.titulo_servicio{
+  font-size: 2rem;
+  color: var(--color5);
+}
 
 label{
   font-size: 1.2rem;
@@ -76,7 +80,6 @@ label{
   color: #fff;
   font-size: 1.2rem;
   background-color: var(--color4);
-  font-weight: bolder;
 }
 
 
@@ -131,6 +134,37 @@ label{
     background-image: url("./assets/banners/BANNER_COTIZAR.png");
   }
 
+  .carousel-desktop{
+    display: none;
+  }
+
+  .cont-banner_movil{
+    width: 100%;
+    height: 750px;
+    margin-top: 79px;
+  }
+.banner_movil{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+  .banner1_movil{
+    background-image: url("./assets/banners/BANNER_SERVICIOS_movil.jpg");
+  }
+
+  .banner2_movil{
+    background-image: url("./assets/banners/BANNER_ABERTURAS_movil.jpg");
+  }
+
+  .banner3_movil{
+    background-image: url("./assets/banners/BANNER_COTIZAR_movil.jpg");
+  }
+
+  .carousel-movil{
+    display: block;
+  }
   /* ---------------------------seccion cards ------------------  */
 
 .card{
@@ -310,12 +344,25 @@ border: solid 1px blue;
   /* -------------------------media querys------------------------*/
   
   @media (min-width:450px){
+
+    
+    .carousel-desktop{
+      display: block;
+    }
+
+    .carousel-movil{
+      display: none;
+    }
+
     .banner{
       width: 100%;
       height: 100%;
       background-size: cover;
       background-repeat: no-repeat;
+      
     }
+
+
     .img-quienes-somos{
       width: 300px;
       max-height: 500px;

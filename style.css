@@ -122,6 +122,37 @@ label{
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.cont-inf-banner{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 10%;
+}
+
+.titulo-banner{
+  font-size: 5rem;
+  line-height: 4.5rem;
+}
+
+.titulo-banner-movil{
+  font-size: 3rem;
+}
+
+.btn-banner{
+  border: none;
+  padding: 10px 0;
+  font-size: 1.2rem;
+  width: 150px;
+  border-radius: 50px;
+  background-color: var(--color4);
+  color: #fff;
+}
+
   .banner1{
     background-image: url("./assets/banners/BANNER_SERVICIOS.png");
   }
@@ -148,7 +179,7 @@ label{
   .cont-inf-banner-movil{
     background-color: rgba(168, 150, 137, 0.479);
     width: 90%;
-    height: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -165,7 +196,19 @@ label{
   filter: brightness(65%);
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
+}
+
+.banner1_movil{
+  justify-content: end;
+}
+
+.rounded_banner_1{
+  border-radius: 50px 0 0 50px !important;
+}
+
+.rounded_banner_2_3{
+  border-radius: 0 50px 50px 0 !important;
 }
 
   .banner1_movil{

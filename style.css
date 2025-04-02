@@ -80,8 +80,14 @@ label{
   color: #fff;
   font-size: 1.2rem;
   background-color: var(--color4);
+  transition: .2s ease-in;
+  
 }
 
+.buttons:hover{
+  background-color: var(--color5);
+
+}
 
 .logo{
     width: 75px;
@@ -123,35 +129,13 @@ label{
   background-repeat: no-repeat;
 }
 
-.cont-inf-banner{
-  width: 55%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  padding: 0 10%;
-}
 
-.titulo-banner{
-  font-size: 5rem;
-  line-height: 4.5rem;
-}
+
 
 .titulo-banner-movil{
   font-size: 3rem;
 }
 
-.btn-banner{
-  border: none;
-  padding: 10px 0;
-  font-size: 1.2rem;
-  width: 150px;
-  border-radius: 50px;
-  background-color: var(--color4);
-  color: #fff;
-}
 
   .banner1{
     background-image: url("./assets/banners/BANNER_SERVICIOS.png");
@@ -407,13 +391,9 @@ border: solid 1px blue;
   @media (min-width:450px){
 
     
-    .carousel-desktop{
-      display: block;
-    }
 
-    .carousel-movil{
-      display: none;
-    }
+
+
 
     .banner{
       width: 100%;
@@ -432,9 +412,34 @@ border: solid 1px blue;
 
   @media (min-width: 768px){
 
+.titulo-banner{
+  font-size: 3rem;
+  line-height: 2.5rem;
+}
+
+.cont-inf-banner{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 5%;
+}
+    .carousel-desktop{
+      display: block;
+      
+    }
+    
+    .carousel-movil{
+      display: none;
+    }
+
     .cont-banner{
       margin-top: 80px;
       height: 500px;
+      
     }
 
     .card{
@@ -443,6 +448,15 @@ border: solid 1px blue;
   }
 
   @media (min-width:1200px){
+
+    .cont-inf-banner{
+      padding: 0 10%;
+    }
+
+    .titulo-banner{
+      font-size: 5rem;
+      line-height: 4.5rem;
+    }
     .cont-banner{
       margin-top: 80px;
       height: calc(100vh - 80px);
@@ -450,9 +464,12 @@ border: solid 1px blue;
   }
 
   .cont-pregunta{
-    background-color: var(--color3);
+    background-color: #fff;
     border-radius: 50px;
     margin: 15px 0;
+    color: var(--color5);
+    border: solid 1px #0000001c;
+    box-shadow: #00000071 3px 3px 15px;
   }
 
   .accordion-button:focus {

@@ -131,7 +131,8 @@ label{
 
 
 .watch{
-  opacity: 0;
+  opacity: 0%;
+  transition: 1s ease-in;
 }
 
 .titulo-banner-movil{
@@ -179,8 +180,7 @@ label{
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  /* filter: brightness(65%); */
-  backdrop-filter: brightness(65%);
+
   display: flex;
   align-items: center;
   justify-content: start;
@@ -214,6 +214,7 @@ label{
     display: block;
   }
   /* ---------------------------seccion cards ------------------  */
+
 
 .card{
   transition: .2s ease-in;
@@ -283,6 +284,44 @@ label{
   height: 90%;
 }
 
+.cont-carrousel-service{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 30px;
+}
+.btn-carrousel{
+  width: 100px;
+  background-color: transparent;
+  text-decoration: underline;
+  border: none;
+}
+
+.cont-img-carrousel-service::before{
+  content: "";
+  display: flex;
+  height: auto;
+  width: auto;
+  background-color: var(--color3);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  border-radius: 0 50px 50px 0;
+  padding:5px 15px ;
+  align-items: center;
+  color: #fff;
+  font-size: 1.3rem;
+}
+.hidrolaqueado::before{
+  content: "Hidrolaqueado";
+}
+
 .opacidad{
   filter: blur(3px);
 }
@@ -293,17 +332,18 @@ label{
   }
 }
 
-.services-carrousel{
-border: solid 1px blue;
-}
+
 
 .cont-img-carrousel-service{
   height: 350px;
   border-radius: 50px;
-  background-color: red;
+  background-color: rgb(80, 80, 80);
   transform: scale(90%);
+  background-size: cover;
 }
-
+.hidrolaqueado{
+  background-image: url("./assets/images/img1.jpg");
+}
 .slick-center {
   background-color: black;
   transform: scale(100%);
@@ -348,7 +388,19 @@ border: solid 1px blue;
 .contacto{
   background-color: var(--color1);
   color: #fff;
+  position: relative;
+}
+.icon-madera{
+  position: absolute;
+  top: -50%;
+  opacity: 15%;
+  z-index: 100;
+  filter: blur(3px);
+}
 
+.icon-madera-2{
+  top: -75%;
+  opacity: 10%;
 }
 
 .inf-contacto{
@@ -387,6 +439,7 @@ border: solid 1px blue;
 
 .trabaja-con-nosotros{
   background-color: #F5F5F0;
+  position: relative;
 }
 
   /* -------------------------media querys------------------------*/
@@ -464,6 +517,9 @@ border: solid 1px blue;
       margin-top: 80px;
       height: calc(100vh - 80px);
     }
+    .card{
+      max-width: 300px;
+    }
   }
 
   .cont-pregunta{
@@ -471,8 +527,6 @@ border: solid 1px blue;
     border-radius: 50px;
     margin: 15px 0;
     color: var(--color5);
-    border: solid 1px #0000001c;
-    box-shadow: #00000071 3px 3px 15px;
   }
 
   .accordion-button:focus {
